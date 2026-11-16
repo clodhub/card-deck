@@ -1,6 +1,6 @@
 {
   "name": "card-deck",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "title": "Card deck",
   "description": "A standard 52-card deck, optionally several decks and jokers: create, shuffle through an injected random source, deal, burn, and read card codes on server, web, Apple and Android.",
   "facilities": [
@@ -45,10 +45,10 @@
   ],
   "dependencies": [],
   "platforms": [
-    "server",
-    "web",
+    "android",
     "apple",
-    "android"
+    "server",
+    "web"
   ],
   "tools": {
     "node": "26.5.0",
@@ -130,5 +130,166 @@
       }
     ],
     "notes": "Pure library; no provider limits apply."
+  },
+  "classes": [
+    {
+      "reference": {
+        "name": "ourapps-ae/card-deck-class",
+        "version": "1.0.0",
+        "digest": "d495500efe68e358cb548fa2a73d926b78f663ad1ec669c96e835bedfd0d922f"
+      },
+      "descriptor": {
+        "format": 1,
+        "name": "ourapps-ae/card-deck-class",
+        "version": "1.0.0",
+        "provides": [
+          {
+            "type": "ae/card-deck",
+            "version": "1.0.0",
+            "path": "classes/card-deck-class/card-deck.json",
+            "modules": {
+              "web": [
+                "web/index.ts"
+              ],
+              "server": [
+                "server/index.ts"
+              ],
+              "android": [
+                "android/src/main/java"
+              ],
+              "ios": [
+                "apple/Sources"
+              ],
+              "macos": [
+                "apple/Sources"
+              ],
+              "tvos": [
+                "apple/Sources"
+              ],
+              "windows": [
+                "web/index.ts"
+              ]
+            }
+          }
+        ],
+        "requires": [
+          {
+            "type": "ae/random-source",
+            "version": "1.0.0"
+          }
+        ],
+        "settings": {
+          "type": "object",
+          "properties": {
+            "decks": {
+              "type": "integer"
+            },
+            "jokers": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "decks",
+            "jokers"
+          ],
+          "additionalProperties": false
+        },
+        "inventory": [
+          {
+            "path": "classes/card-deck-class/card-deck.json",
+            "digest": "4c163190762cd8be45e536754adf4c63eee83f70f5dcc2e051d735ab6005fa0a"
+          },
+          {
+            "path": "classes/card-deck-class/check.mjs",
+            "digest": "cec771fc1309fbb49fa49acd84011d8136d1d854cc7b001de4cfc227c6004fb7"
+          },
+          {
+            "path": "classes/card-deck-class/runtime.mjs",
+            "digest": "7440f3891614c423f74668cb5a2445fea58bbfa4d7c740c8e8a855d1d9300d43"
+          }
+        ],
+        "verification": [
+          {
+            "id": "shared",
+            "root": "package",
+            "argv": [
+              "node",
+              "classes/card-deck-class/check.mjs"
+            ],
+            "cwd": ".",
+            "prepare": [],
+            "tools": {
+              "node": "26.5"
+            },
+            "fixtures": [
+              "classes/card-deck-class/check.mjs"
+            ],
+            "locks": [],
+            "network": false,
+            "timeoutSeconds": 60,
+            "expectedExit": 0,
+            "scope": "required-local",
+            "requirements": []
+          }
+        ]
+      }
+    }
+  ],
+  "implements": [
+    {
+      "name": "ourapps-ae/card-deck-class",
+      "version": "1.0.0",
+      "digest": "d495500efe68e358cb548fa2a73d926b78f663ad1ec669c96e835bedfd0d922f"
+    }
+  ],
+  "upstream": [],
+  "compatibility": {
+    "runtimes": {
+      "node": ">=26.5.0 <27.0.0",
+      "swift": "=6.4.2",
+      "ios": ">=17.0.0",
+      "macos": ">=14.0.0",
+      "tvos": ">=17.0.0",
+      "kotlin": "=2.3.20",
+      "java": ">=17.0.0 <27.0.0",
+      "android": ">=8.0.0"
+    },
+    "frameworks": {},
+    "dependencies": [],
+    "styles": {
+      "scope": "none",
+      "namespaces": [],
+      "conflicts": []
+    }
+  },
+  "maintenance": {
+    "owners": [
+      "Level N Ltd"
+    ],
+    "contact": "https://github.com/ourapps-ae/card-deck/issues",
+    "repository": "https://github.com/ourapps-ae/card-deck",
+    "updates": {
+      "source": "https://github.com/ourapps-ae/card-deck/releases",
+      "strategy": "manual"
+    }
+  },
+  "supportedPlatforms": [
+    "android",
+    "ios",
+    "macos",
+    "server",
+    "tvos",
+    "web",
+    "windows"
+  ],
+  "licence": "Apache-2.0",
+  "licenceFile": "LICENCE",
+  "noticeFile": "NOTICE",
+  "templates": [],
+  "modules": {
+    "web": "web/index.ts",
+    "server": "server/index.ts",
+    "android": "android/src/main/java",
+    "apple": "apple/Sources"
   }
 }
