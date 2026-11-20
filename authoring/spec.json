@@ -1,6 +1,6 @@
 {
   "name": "card-deck",
-  "version": "0.8.0",
+  "version": "0.9.0",
   "title": "Card deck",
   "description": "A standard 52-card deck, optionally several decks and jokers: create, shuffle through an injected random source, deal, burn, and read card codes on server, web, Apple and Android.",
   "facilities": [
@@ -135,13 +135,17 @@
     {
       "reference": {
         "name": "ourapps-ae/card-deck-class",
-        "version": "1.0.0",
-        "digest": "d495500efe68e358cb548fa2a73d926b78f663ad1ec669c96e835bedfd0d922f"
+        "version": "1.1.0",
+        "digest": "57a139a8faca808463beefdc0b29e1202279861e7c46c10cf529e47bf9a283ce"
       },
       "descriptor": {
-        "format": 1,
+        "format": 2,
         "name": "ourapps-ae/card-deck-class",
-        "version": "1.0.0",
+        "version": "1.1.0",
+        "title": "Card deck",
+        "summary": "A deck of playing cards: building, dealing and naming cards",
+        "category": "games/cards",
+        "presentation": "none",
         "provides": [
           {
             "type": "ae/card-deck",
@@ -238,8 +242,8 @@
   "implements": [
     {
       "name": "ourapps-ae/card-deck-class",
-      "version": "1.0.0",
-      "digest": "d495500efe68e358cb548fa2a73d926b78f663ad1ec669c96e835bedfd0d922f"
+      "version": "1.1.0",
+      "digest": "57a139a8faca808463beefdc0b29e1202279861e7c46c10cf529e47bf9a283ce"
     }
   ],
   "upstream": [],
@@ -250,7 +254,7 @@
       "ios": ">=17.0.0",
       "macos": ">=14.0.0",
       "tvos": ">=17.0.0",
-      "kotlin": "=2.3.20",
+      "kotlin": "=2.4.21",
       "java": ">=17.0.0 <27.0.0",
       "android": ">=8.0.0"
     },
@@ -525,5 +529,11 @@
         "manual": "Without the package manager, install Node 26 from nodejs.org (the installer, or the zip or tar archive with its folder put first on PATH); on Linux also from the NodeSource repository."
       }
     ]
-  }
+  },
+  "release": {
+    "channel": "features",
+    "fixes": []
+  },
+  "images": [],
+  "vulnerabilityWaivers": []
 }
