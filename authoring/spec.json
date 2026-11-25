@@ -1,6 +1,6 @@
 {
   "name": "card-deck",
-  "version": "0.9.0",
+  "version": "0.10.0",
   "title": "Card deck",
   "description": "A standard 52-card deck, optionally several decks and jokers: create, shuffle through an injected random source, deal, burn, and read card codes on server, web, Apple and Android.",
   "facilities": [
@@ -51,11 +51,11 @@
     "web"
   ],
   "tools": {
-    "node": "26.5.0",
-    "python3": "3.12.8",
-    "swiftc": "6.4.2",
-    "kotlinc": "2.2.0",
-    "java": "26.0.1"
+    "node": "26.5",
+    "python3": "3.12",
+    "swiftc": "6.4",
+    "kotlinc": "2.2",
+    "java": "26.0"
   },
   "suites": [
     {
@@ -75,8 +75,8 @@
       ],
       "scope": "platform",
       "tools": {
-        "python3": "3.12.8",
-        "swiftc": "6.4.2"
+        "python3": "3.12",
+        "swiftc": "6.4"
       },
       "fixtures": [
         "tests/apple/main.swift",
@@ -92,9 +92,9 @@
       ],
       "scope": "platform",
       "tools": {
-        "python3": "3.12.8",
-        "kotlinc": "2.2.0",
-        "java": "26.0.1"
+        "java": "26.0",
+        "kotlinc": "2.2",
+        "python3": "3.12"
       },
       "fixtures": [
         "tests/android/Main.kt",
@@ -134,13 +134,13 @@
   "classes": [
     {
       "reference": {
-        "name": "ourapps-ae/card-deck-class",
+        "name": "clodhub/card-deck-class",
         "version": "1.1.0",
-        "digest": "57a139a8faca808463beefdc0b29e1202279861e7c46c10cf529e47bf9a283ce"
+        "digest": "25e5cb8ff3a78e74aa0accf799801b0816fe00a2450477af4a78c9a84ce51b85"
       },
       "descriptor": {
         "format": 2,
-        "name": "ourapps-ae/card-deck-class",
+        "name": "clodhub/card-deck-class",
         "version": "1.1.0",
         "title": "Card deck",
         "summary": "A deck of playing cards: building, dealing and naming cards",
@@ -201,7 +201,7 @@
         "inventory": [
           {
             "path": "classes/card-deck-class/card-deck.json",
-            "digest": "4c163190762cd8be45e536754adf4c63eee83f70f5dcc2e051d735ab6005fa0a"
+            "digest": "68cfd5d4a86134e123246c8e53737301c1769fd3bb872063c6ba0cf8594141b8"
           },
           {
             "path": "classes/card-deck-class/check.mjs",
@@ -241,9 +241,9 @@
   ],
   "implements": [
     {
-      "name": "ourapps-ae/card-deck-class",
+      "name": "clodhub/card-deck-class",
       "version": "1.1.0",
-      "digest": "57a139a8faca808463beefdc0b29e1202279861e7c46c10cf529e47bf9a283ce"
+      "digest": "25e5cb8ff3a78e74aa0accf799801b0816fe00a2450477af4a78c9a84ce51b85"
     }
   ],
   "upstream": [],
@@ -270,10 +270,10 @@
     "owners": [
       "Level N Ltd"
     ],
-    "contact": "https://github.com/ourapps-ae/card-deck/issues",
-    "repository": "https://github.com/ourapps-ae/card-deck",
+    "contact": "https://github.com/clodhub/card-deck/issues",
+    "repository": "https://github.com/clodhub/card-deck",
     "updates": {
-      "source": "https://github.com/ourapps-ae/card-deck/releases",
+      "source": "https://github.com/clodhub/card-deck/releases",
       "strategy": "manual"
     }
   },

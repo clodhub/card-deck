@@ -7,12 +7,12 @@
   "focus": "component",
   "definitions": [
     {
-      "id": "ourapps-ae.card-deck",
+      "id": "clodhub.card-deck",
       "name": "Card deck",
       "kind": "component",
       "status": "example",
-      "package": "ourapps-ae/card-deck",
-      "version": "0.9.0",
+      "package": "clodhub/card-deck",
+      "version": "0.10.0",
       "ports": [
         {
           "id": "random-source",
@@ -85,7 +85,7 @@
     {
       "id": "component",
       "name": "Card deck",
-      "definition": "ourapps-ae.card-deck",
+      "definition": "clodhub.card-deck",
       "configuration": {}
     },
     {
