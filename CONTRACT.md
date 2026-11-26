@@ -9,12 +9,12 @@ Facilities: `card-deck` (Create, shuffle, deal and burn cards; card codes, colou
 The installer collects two settings. `decks` is how many 52-card packs to combine (whole number, 1 to 8; default 1). `jokers` adds two jokers per pack when true (default false).
 
 - `decks` (integer; optional; default `1`)
-- `jokers` (boolean; optional; default `False`)
+- `jokers` (boolean; optional; default `false`)
 
 ## Artefacts and dependencies
 `component.json` maps every `implementation/` source into `components/card-deck/`:
 
-- `implementation/android/src/main/java/ae/deck/CardCode.kt` -> `components/card-deck/android/src/main/java/ae/deck/CardCode.kt`
+- `implementation/android/src/main/java/com/clodhub/deck/CardCode.kt` -> `components/card-deck/android/src/main/java/com/clodhub/deck/CardCode.kt`
 - `implementation/apple/Sources/CardCodes.swift` -> `components/card-deck/apple/Sources/CardCodes.swift`
 - `implementation/server/deck.ts` -> `components/card-deck/server/deck.ts`
 - `implementation/web/cards.ts` -> `components/card-deck/web/cards.ts`
@@ -23,10 +23,10 @@ Dependencies: none.
 `tools.lock.json` pins verification tools: node 26.5, python3 3.12, swiftc 6.4, kotlinc 2.2, java 26.0. Licence: `Apache-2.0` (`LICENCE`, `NOTICE`).
 
 ## Provided interfaces
-- `interfaces/card-deck.json` defines `card-deck` (ae/card-deck) version 1.0.0: an OpenRPC 1.3.2 document, one method per function (a member of a created object is `<Type>.<member>`), with parameter, result and data types as JSON Schema 2020-12 (`components.schemas`) and thrown errors under `errors`.
+- `interfaces/card-deck.json` defines `card-deck` (com.clodhub/card-deck) version 1.0.0: an OpenRPC 1.3.2 document, one method per function (a member of a created object is `<Type>.<member>`), with parameter, result and data types as JSON Schema 2020-12 (`components.schemas`) and thrown errors under `errors`.
 
 ## Required interfaces
-- `random-source` (ae/random-source) version 1.0.0, supplied by the recipe or application.
+- `random-source` (com.clodhub/random-source) version 1.0.0, supplied by the recipe or application.
 
 `interfaces/required-random-source.json` is a byte copy of the providing component's document.
 

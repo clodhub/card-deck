@@ -1,4 +1,4 @@
-package ae.deck
+package com.clodhub.deck
 
 // Card facts for a client that draws cards. Data only; faces and pip layouts belong to card-graphics.
 // A code is two characters: rank 2-9, T, J, Q, K, A then suit c, d, h, s. Jokers are "*r" and "*b".

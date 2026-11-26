@@ -1,6 +1,7 @@
 {
   "name": "card-deck",
-  "version": "0.10.0",
+  "version": "0.11.0",
+  "sourceRevision": "19905b75dbea89fbfd424d67fe26c81aaed0e018",
   "title": "Card deck",
   "description": "A standard 52-card deck, optionally several decks and jokers: create, shuffle through an injected random source, deal, burn, and read card codes on server, web, Apple and Android.",
   "facilities": [
@@ -12,7 +13,7 @@
   "provides": [
     {
       "id": "card-deck",
-      "type": "ae/card-deck",
+      "type": "com.clodhub/card-deck",
       "version": "1.0.0",
       "path": "interfaces/card-deck.json"
     }
@@ -20,7 +21,7 @@
   "requires": [
     {
       "id": "random-source",
-      "type": "ae/random-source",
+      "type": "com.clodhub/random-source",
       "version": "1.0.0",
       "path": "interfaces/required-random-source.json"
     }
@@ -134,13 +135,13 @@
   "classes": [
     {
       "reference": {
-        "name": "clodhub/card-deck-class",
+        "name": "pkg:clod/com.clodhub/card-deck-class",
         "version": "1.1.0",
-        "digest": "25e5cb8ff3a78e74aa0accf799801b0816fe00a2450477af4a78c9a84ce51b85"
+        "digest": "a7cf8847deeaf2c5e26cd26967dafb5f43302b45f68dc17c8fad982237f5d21b"
       },
       "descriptor": {
-        "format": 2,
-        "name": "clodhub/card-deck-class",
+        "format": 3,
+        "name": "pkg:clod/com.clodhub/card-deck-class",
         "version": "1.1.0",
         "title": "Card deck",
         "summary": "A deck of playing cards: building, dealing and naming cards",
@@ -148,7 +149,7 @@
         "presentation": "none",
         "provides": [
           {
-            "type": "ae/card-deck",
+            "type": "com.clodhub/card-deck",
             "version": "1.0.0",
             "path": "classes/card-deck-class/card-deck.json",
             "modules": {
@@ -178,7 +179,7 @@
         ],
         "requires": [
           {
-            "type": "ae/random-source",
+            "type": "com.clodhub/random-source",
             "version": "1.0.0"
           }
         ],
@@ -201,7 +202,7 @@
         "inventory": [
           {
             "path": "classes/card-deck-class/card-deck.json",
-            "digest": "68cfd5d4a86134e123246c8e53737301c1769fd3bb872063c6ba0cf8594141b8"
+            "digest": "e3f51f5f77ccb57a23fda4af88e53ec895b42e680059675944fd1ad37c78aa96"
           },
           {
             "path": "classes/card-deck-class/check.mjs",
@@ -209,7 +210,7 @@
           },
           {
             "path": "classes/card-deck-class/runtime.mjs",
-            "digest": "7440f3891614c423f74668cb5a2445fea58bbfa4d7c740c8e8a855d1d9300d43"
+            "digest": "1d85f0dae92d5c6c859cd48a4211a933718ae3e168554a2b00806183c4b661f0"
           }
         ],
         "verification": [
@@ -241,9 +242,9 @@
   ],
   "implements": [
     {
-      "name": "clodhub/card-deck-class",
+      "name": "pkg:clod/com.clodhub/card-deck-class",
       "version": "1.1.0",
-      "digest": "25e5cb8ff3a78e74aa0accf799801b0816fe00a2450477af4a78c9a84ce51b85"
+      "digest": "a7cf8847deeaf2c5e26cd26967dafb5f43302b45f68dc17c8fad982237f5d21b"
     }
   ],
   "upstream": [],

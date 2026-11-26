@@ -7,19 +7,19 @@
   "focus": "component",
   "definitions": [
     {
-      "id": "clodhub.card-deck",
+      "id": "com.clodhub.card-deck",
       "name": "Card deck",
       "kind": "component",
       "status": "example",
-      "package": "clodhub/card-deck",
-      "version": "0.10.0",
+      "package": "pkg:clod/com.clodhub/card-deck",
+      "version": "0.11.0",
       "ports": [
         {
           "id": "random-source",
           "name": "Random source",
           "direction": "input",
           "kind": "interface",
-          "type": "ae/random-source",
+          "type": "com.clodhub/random-source",
           "version": "1.0.0",
           "required": true,
           "cardinality": "one"
@@ -29,7 +29,7 @@
           "name": "Card deck",
           "direction": "output",
           "kind": "interface",
-          "type": "ae/card-deck",
+          "type": "com.clodhub/card-deck",
           "version": "1.0.0"
         }
       ],
@@ -64,7 +64,7 @@
           "name": "Card deck",
           "direction": "input",
           "kind": "interface",
-          "type": "ae/card-deck",
+          "type": "com.clodhub/card-deck",
           "version": "1.0.0",
           "required": true,
           "cardinality": "one"
@@ -74,7 +74,7 @@
           "name": "Random source",
           "direction": "output",
           "kind": "interface",
-          "type": "ae/random-source",
+          "type": "com.clodhub/random-source",
           "version": "1.0.0"
         }
       ],
@@ -85,7 +85,7 @@
     {
       "id": "component",
       "name": "Card deck",
-      "definition": "clodhub.card-deck",
+      "definition": "com.clodhub.card-deck",
       "configuration": {}
     },
     {

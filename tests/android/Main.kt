@@ -1,4 +1,4 @@
-import ae.deck.CardCode
+import com.clodhub.deck.CardCode
 import java.io.File
 
 // Minimal reader for the flat fixture: rows are lines of the form ["2c", true, 0, 0, false, null, "2", 9827].
